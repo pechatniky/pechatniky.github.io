@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню Кафетерия</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .product-card {
+            display: flex;
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            width: 90%;
+            max-width: 600px;
+            overflow: hidden;
+        }
+
+        .product-image-container {
+            position: relative;
+            flex-shrink: 0;
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .product-price-overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #ff6347;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 25px;
+        }
+
+        .product-info {
+            padding: 10px 20px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .product-title {
+            font-size: 24px;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        .product-description,
+        .product-ingredients {
+            font-size: 16px;
+            color: #b0b0b0;
+            margin: 5px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="product-card">
+            <div class="product-image-container">
+                <img src="image.jpeg" alt="Пицца Маргарита" class="product-image">
+                <div class="product-price-overlay">500 руб.</div>
+            </div>
+            <div class="product-info">
+                <h2 class="product-title">Пицца Маргарита</h2>
+                <p class="product-description">Традиционная итальянская пицца с томатным соусом и сыром моцарелла. Традиционная итальянская пицца с томатным соусом и сыром моцарелла.</p>
+                <p class="product-ingredients"><strong>Состав:</strong> томатный соус, сыр моцарелла, базилик, тесто. томатный соус, сыр моцарелла, базилик, тесто. томатный соус, сыр моцарелла, базилик, тесто.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
