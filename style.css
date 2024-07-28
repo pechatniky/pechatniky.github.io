@@ -28,6 +28,7 @@
     position: relative;
 }
 
+/*
 .card_image:before,
 .card_image:after {
     content: "";
@@ -45,7 +46,7 @@
     top: auto;
     bottom: -22px;
     left: 40%;
-}
+} */
 
 .card_image img {
     width: 100%;
@@ -72,7 +73,7 @@
 }
 
 .card_content {
-    padding: 1.2rem;
+    padding: 0px 20px;
 }
 
 h2.card_title,
@@ -90,11 +91,12 @@ body {
 }
 
 html {
-    font-size: 15px;
+    font-size: 12px;
 }
 
 h1 {
     background: white;
     padding: 10px 30px;
     margin: 30px 15px 10px 15px;
+    font-size: 19px;
 }
