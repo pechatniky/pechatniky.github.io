@@ -21,7 +21,7 @@ for (const category of data) {
         const itemLi = document.createElement('li');
         let itemDescription = ''
         if (item.description) {
-            itemDescription = `<div class="card_text"><p>${item.description}</p><p><i>Ingredientes:</i> ${item.products}</p><br>`
+            itemDescription = `<div class="card_text"><p>${item.description}</p><br>`
         }
         itemLi.className = 'cards_item';
         itemLi.innerHTML = `<div class="card"><div class="card_image"><a href="images/${folder}/${item.image}_big.jpg" target="_blank"><img loading="lazy" src="images/${folder}/${item.image}_small.jpg"></a></div><div class="card_content"><br><h2 class="card_title">${item.name} • $${item.price}</h2><br>${itemDescription}</div></div></div>`
